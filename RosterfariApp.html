@@ -1,0 +1,46 @@
+﻿<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <title>Roster App!</title>
+    <link href="RosterfariApp.css" rel="stylesheet"/>
+
+</head>
+<body>
+    <div class="container">
+        <div class="row clearfix">
+            <div class="col-md-12 column">
+                <div class="jumbotron">
+                    <h1>
+                        ROSTERFARI
+                    </h1>
+                    <p>
+                        Keeping track of who's here.
+                    </p>
+                </div>
+            </div>
+        </div>
+        <div class="row clearfix">
+            <div class="col-md-12 column">
+                <input type="text" class="fullname" placeholder="Full Name" id="fullname" />&nbsp; &nbsp; &nbsp;
+                <input type="text" class="number" placeholder="Phone Number" id="phone" />
+				<br>
+                <br><button class="myButton" onclick="postAjax();"> Please Enter Your Info</button> &nbsp; &nbsp;
+                <button class="myButton2" onclick="getAjax();">See Who's Here</button>
+            </div>
+			
+        </div>
+		<br>
+	
+     <div class="table">
+                <table  cellspacing="0">
+			        
+                    <tr>
+                        <td id="outputTable">                       
+                        </td>                   
+                    </tr>
+		       </table> 
+            </div>
+
+    <script src="RosterfariApp.js"></script>
+</body>
+</html>
